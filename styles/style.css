@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Kanit:wght@300&family=Roboto:wght@300&family=Space+Mono&family=Work+Sans:wght@300&display=swap');
+
+body{
+  background-color: #121212;
+}
+
+header{
+  background-color:#582C83;
+  color: #FFFFFF;
+}
+
+footer{
+  background-color:#582C83;
+  color: #FFFFFF;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+  padding-right: 15px;
+  line-height: 1;
+}
+
+h1{
+  font-family: 'Archivo Black', sans-serif;
+  text-align: center;
+  font-size: 33px;
+  color:#FFFFFF;
+}
+
+h2{
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color:#FFFFFF;
+}
+
+h5{
+  color:#FFFFFF;
+  font-family: 'Kanit', sans-serif;
+}
+
+p{
+  color:#FFFFFF;
+  font-family: 'Kanit', sans-serif;
+}
+
+input{
+  border-radius: 1%;
+  border: 1px solid #121212;
+  font-family: 'Kanit', sans-serif;
+}
+
+button{
+  background-color: #582C83;
+  border: none;
+  color: #FFFFFF;
+  height: 40px;
+  width: 50%;
+  margin: auto;
+  font-family: 'Kanit', sans-serif;
+}
+
+a{
+  color: #EAAA00;
+}
+
+a:hover{
+  color: #aa7d02;
+}
+
+.login{
+  width: 10%;
+  height: 30px;
+  min-width: 55%;
+  align-self: center;
+  background-color: #575757;
+}
+
+.card{
+  min-width: 300px;
+  background-color: #282828;
+}
+
+.UNAlogo{
+  width: 30%;
+  min-width: 54px;
+}
+
+.w3-modal-content{
+  background-color: #282828;
+}
+
+.UIexample{
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#visitorButton{
+  max-width: 150px;
+  height: 35px;
+}
+
+#UNAlogoRight{
+  float: right;
+}
+
+#UNAlogoFooter{
+  max-width: 40%;
+  padding-top: 8.3%;
+  padding-left: 10px;
+  float: left;
+}
+
+#vehicleCard{
+  background-color:#575757;
+  color:#FFFFFF;
+  font-family: 'Kanit', sans-serif;
+}
+
+#registerInputDiv{
+  background-color: #282828;
+  border: 0px;
+}

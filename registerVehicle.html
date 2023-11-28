@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNA Transportation Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'><link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+
+    <header>
+      <div class="row align-items-center">
+        <div class="col">
+          <img class="img-fluid UNAlogo" src="media/UNAlogo.png" alt="University of North Alabama logo">
+        </div>
+        <div class="col">
+          <h1>UNIVERSITY OF NORTH ALABAMA</h1>
+          <h2>TRANSPORTATION SERVICES PORTAL (Example)</h2>
+          <div class="row text-center">
+            <div class="col-6">
+              <a href="info.html">What is this</a>
+            </div>
+            <div class="col-6">
+              <a href="https://www.google.com/">Visit repo</a>     
+            </div>
+          </div>
+        </div>
+        <div class="col float-right">
+          <img id="UNAlogoRight" class="img-fluid UNAlogo" src="media/UNAlogo.png" alt="University of North Alabama logo">
+        </div>
+      </div>
+
+    </header>
+
+    <br>
+    <h1>Vehicle Info</h1>
+
+    <div class="card container-fluid form-control text-center w-50">
+      <h5>Active Vehicle</h5>
+      <div id="vehicleCard" class="card container-fluid form-control text-center w-50">
+      </div>
+      <br>
+      <button id="registerButton">Register/Update Vehicle</button>
+    </div>
+
+    <div id="vehicleModal" class="w3-modal">
+      <div class="w3-modal-content w3-animate-top w3-card-4">
+        <header class="w3-container"> 
+          <span onclick="document.getElementById('vehicleModal').style.display='none'" 
+          class="w3-button w3-display-topright">&times;</span>
+          <br>
+          <h2>Register/Update Vehicle</h2>
+          <br>
+        </header>
+        <div class="w3-container">
+          <br>
+          <div id="registerInputDiv" class="form-control text-center">
+            <h5>Plate</h5>
+            <input type="text" id="plate" class="registerInput" name="plate" placeholder="PL8RDR" class="col-sm form-control">
+            <br>
+            <h5>State</h5>
+            <select id="state" class="registerInput" name="state" class="container-fluid">
+              <option value=" " label=" "></option>
+            </select>
+            <br>
+            <h5>Plate Type</h5>
+            <select id="type" class="registerInput" name="type" class="container-fluid">
+              <option value="Passenger" label="Passenger"></option>
+              <option value="Commercial" label="Commercial"></option>
+              <option value="Government" label="Government"></option>
+              <option value="Motorcycle" label="Motorcycle"></option>
+            </select>
+            <h5>Make</h5>
+            <select id="make" class="registerInput" name="make" class="container-fluid">
+              <option value=" " label=" "></option>
+            </select>
+            <h5>Vehicle Type</h5>
+            <select id="vehicleType" class="registerInput" name="vehicleType" class="container-fluid">
+              <option value=" " label=" "></option>
+            </select>
+            <h5>Color</h5>
+            <select id="color" class="registerInput" name="color" class="container-fluid">
+              <option value=" " label=" "></option>
+            </select>
+            <h5>Year</h5>
+            <input type="text" id="year" class="registerInput" name="year" placeholder="20XX" class="col-sm form-control">
+            <br><br>
+            <div class="row">
+              <div class="col-2">
+                <input type="checkbox" id="liability" name="liability" value="yes">
+              </div>
+              <div class="col-4">
+                <p>I agree to the <a id="termsOfServiceLink" href="#">terms of service</a></p>
+              </div>
+              <p id="termsOfService"></p>
+              <button id="submit">Submit</button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer>
+      <div class="row">
+        <div class="col">
+          <img id="UNAlogoFooter" class="img-fluid" src="media/UNAfooterLogo.png" alt="University of North Alabama logo">
+        </div>
+        <div class="col">
+          <br>
+          <p class="footerText">University of North Alabama</p>
+          <p>Florence, AL</p>
+          <p>35632</p>
+          <p>+1 (256) 765-4853</p>
+          <p>transportation@una.edu</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js'></script><script  src="scripts/script.js"></script>
+
+  </body>
+</html>
