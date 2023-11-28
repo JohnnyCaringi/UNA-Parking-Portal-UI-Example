@@ -194,7 +194,7 @@ $(document).ready(function(){
     vehicleInfo.make = $("#make").val();
     vehicleInfo.vehicleType = $("#vehicleType").val();
     vehicleInfo.color = $("#color").val();
-    vehicleInfo.year = $("#plate").val();
+    vehicleInfo.year = $("#year").val();
 
     updateVehicleInfo();
 
